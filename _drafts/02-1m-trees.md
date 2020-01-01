@@ -5,14 +5,17 @@ tags: [leaflet, geo]
 leafletmap: true
 ---
 
-In December last year a project to plant one million trees in the
-[Brecon Beacons National Park](https://en.wikipedia.org/wiki/Brecon_Beacons)
-was announced. I wondered, how much land would one million trees take up? So
+In December last year a project was announced to plant one million trees in the
+[Brecon Beacons National Park](https://en.wikipedia.org/wiki/Brecon_Beacons), which
+is where I live.
+I wondered, how much land would one million trees take up? So
 I made this map to illustrate:
 
 <div id="mapid" style="height: 500px; width: 800px;"></div>
 
-<script type="module" src="/assets/js/02-1m-trees.js"></script>
+<script type="module" src="{{ site.baseurl }}/assets/js/02-1m-trees.js"></script>
+
+<p></p>
 
 **Visualization type**: map
 

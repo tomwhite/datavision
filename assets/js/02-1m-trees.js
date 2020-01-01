@@ -11,7 +11,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 // Show Brecon Beacons National Park boundary
 const bbnpLayer = omnivore
-  .kml("/assets/kml/brecon_beacons_national_park_boundary.kml")
+  .kml("/datavision/assets/kml/brecon_beacons_national_park_boundary.kml")
   .on("ready", function() {
     map.fitBounds(bbnpLayer.getBounds());
   })
