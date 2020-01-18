@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "4. Books read by Emilia White in 2019"
+tags: d3
+---
+<html>
+  <head>
+    <title>Books read by Emilia White in 2019 | Datavision 2020</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+    <script src="https://d3js.org/d3-format.v1.min.js"></script>
+    <style>
+      .d3-tip {
+        line-height: 1;
+        font-size: 12px;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <p>
+      My daughter Emilia kept a record of all the books she read in 2019. She goes to sixth form
+      college on the train, and has become a voracious reader partly as a result of all the commuting.
+      She read 62 books overall in the year, of which 31 - exactly half - were fiction.
+    </p>
+
+    <p>
+      This visualization shows her reading progress over the year. Each book is represented as a rectangle;
+      blue for fiction, and green for non-fiction.
+      You can see which books she spent more time on, and which books were longer books (with more pages).
+      Perhaps unsurprisingly she read fiction books at a faster rate on average than non-fiction.
+    </p>
+
+    <p>
+      Originally I planned on a simple line chart that showed the pages read over time. But there were several
+      periods when she was reading multiple books at once (in early August, for example), so I had to break
+      the line into multiple pieces, resulting in a discontinuous effect.
+    </p>
+
+    <p>Since there is a lot of fine detail, it may be useful to look at a <a href="{{ site.url }}{{ site.baseurl }}/04-emilia-books-2019-standalone.html">standalone version</a>.</p>
+
+    <div id="my_dataviz" style="width: 700px; height: 450px;"></div>
+
+    <p><b>Visualization type</b>: discontinuous line chart</p>
+
+    <p><b>Data source</b>: <a href="https://github.com/tomwhite/datavision-code/tree/master/04-emilia-books-2019/data">data</a> collected by Emilia White, CSV, 9.3 KB</p>
+
+    <p><b>Technical notes</b>: generated using <a href="https://d3js.org/">d3</a>; <a href="https://github.com/tomwhite/datavision-code/tree/master/04-emilia-books-2019">code</a></p>
+
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/04-emilia-books-2019.js"></script>
+  </body>
+</html>
