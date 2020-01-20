@@ -8,7 +8,7 @@ The proportion of women representatives in the world's national parliaments stoo
 at 24.2% at the end of 2019, including both upper and lower chambers.
 This visualization shows how far there is still to go to reach equality.
 
-![Proportion of women in national parliaments over time, 1945 to 2019]({{ site.baseurl }}/assets/img/01-women-in-parliament.png)
+![Proportion of women in national parliaments over time, 1945 to 2019]({{ site.url }}{{ site.baseurl }}/assets/img/01-women-in-parliament.png)
 
 **Visualization type**: stacked bar chart
 

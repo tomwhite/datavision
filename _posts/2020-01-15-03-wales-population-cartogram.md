@@ -13,10 +13,10 @@ the map so that each authority has an area that reflects the size of its populat
 Notice how Powys in mid Wales shrinks dramatically, while Cardiff (dark green) and the surrounding
 authorities increase massively in size. It looks like a broccoli floret.
 
-![Population by local authority in Wales (area adjusted), 2018]({{ site.baseurl }}/assets/img/03-wales-population-cartogram.png)
+![Population by local authority in Wales (area adjusted), 2018]({{ site.url }}{{ site.baseurl }}/assets/img/03-wales-population-cartogram.png)
 
-I also created a [interactive version]({{ site.baseurl }}/03-wales-population-cartogram-interactive.html) (using plotly) which shows the local authority names and population numbers in tooltips,
-and an [animation]({{ site.baseurl }}/assets/img/03-wales-population-cartogram-animation.gif) that transitions between the two maps. The animation was a bit disappointing since it
+I also created a [interactive version]({{ site.url }}{{ site.baseurl }}/03-wales-population-cartogram-interactive.html) (using plotly) which shows the local authority names and population numbers in tooltips,
+and an [animation]({{ site.url }}{{ site.baseurl }}/assets/img/03-wales-population-cartogram-animation.gif) that transitions between the two maps. The animation was a bit disappointing since it
 isn't very smooth (lots of gaps appear for some reason).
 
 **Visualization type**: cartogram
