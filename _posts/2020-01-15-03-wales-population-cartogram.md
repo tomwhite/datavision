@@ -21,10 +21,10 @@ isn't very smooth (lots of gaps appear for some reason).
 
 **Visualization type**: cartogram
 
-**Data source**:
+**Data sources**:
 * [StatsWales](https://statswales.gov.wales/Catalogue/Population-and-Migration/Population/Estimates/Local-Authority/populationestimates-by-localauthority-year), CSV, 8 KB
 * [Lle Geo-Portal](http://lle.gov.wales/catalogue/item/LocalAuthorities), Shapefile, 4.2 MB
 
-**Technical notes**: generated using [ggplot2](https://ggplot2.tidyverse.org/index.html) and the [cartogram](https://cran.r-project.org/web/packages/cartogram/index.html) package
+**Technical notes**: generated using [ggplot2](https://ggplot2.tidyverse.org/index.html) and the [cartogram](https://cran.r-project.org/web/packages/cartogram/index.html) package; [code](https://github.com/tomwhite/datavision-code/tree/master/03-wales-population-cartogram)
 
 **See also**: [Cartogram example in the R Graph Gallery](https://www.r-graph-gallery.com/cartogram.html)

@@ -14,6 +14,6 @@ This visualization shows how far there is still to go to reach equality.
 
 **Data source**: [Inter-Parliamentary Union](https://data.ipu.org/), CSV, 1.7 MB
 
-**Technical notes**: generated using [ggplot2](https://ggplot2.tidyverse.org/index.html)
+**Technical notes**: generated using [ggplot2](https://ggplot2.tidyverse.org/index.html); [code](https://github.com/tomwhite/datavision-code/tree/master/01-women-in-parliament)
 
 **See also**: [Change in the gender composition of the Rwandan parliament](https://serialmentor.com/dataviz/visualizing-proportions.html#stacked-densities) in [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/) by Claus O. Wilke
