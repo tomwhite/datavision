@@ -1,0 +1,167 @@
+---
+layout: post
+title:  "7. Closest city"
+tags: d3
+---
+<html>
+  <head>
+    <title>Closest city | Datavision 2020</title>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v0.min.js"></script>
+    <script src="https://unpkg.com/d3-delaunay@5.2.0"></script>
+    <style>
+      .subunit.SCT { fill: #dcd; }
+      .subunit.WLS { fill: #dcd; }
+      .subunit.NIR { fill: #dcd; }
+      .subunit.ENG { fill: #dcd; }
+      .subunit.IRL { fill: rgb(204, 221, 212); }
+
+      .subunit-label.IRL {
+        display: none;
+      }
+
+      .subunit-boundary {
+        fill: none;
+        stroke: #777;
+        stroke-dasharray: 2,2;
+        stroke-linejoin: round;
+      }
+
+      .subunit-boundary.IRL {
+        stroke-width: 0;
+      }
+
+      .subunit-label {
+        fill: #777;
+        fill-opacity: .5;
+        font-size: 20px;
+        font-weight: 300;
+        text-anchor: middle;
+      }
+
+      .place,
+      .place-label {
+        fill: #444;
+      }
+
+      text {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 10px;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <p>
+      This Voronoi diagram shows the region that is closest to each city in the UK and Ireland.
+    </p>
+
+    <p>
+      Cities in the UK and Ireland are not defined by size, but are a ceremonial designation.
+      Wikipedia has the details for the <a href="https://en.wikipedia.org/wiki/List_of_cities_in_the_United_Kingdom">UK</a>
+      and <a href="https://en.wikipedia.org/wiki/City_status_in_Ireland">Ireland</a>.
+      There are 69 cities in the UK and 5 in Ireland.
+    </p>
+    
+    <div id="dataviz"></div>
+
+    <p>
+      Hover on a region to see the name of the closest city.
+    </p>
+
+    <p><b>Visualization type</b>: Voronoi diagram</p>
+
+    <p><b>Data source</b>: <a href="https://en.wikipedia.org/wiki/List_of_cities_in_the_United_Kingdom">List of cities in the United Kingdom</a> and
+      <a href="https://en.wikipedia.org/wiki/City_status_in_Ireland">City status in Ireland</a>, 8 KB</p>
+
+    <p><b>Technical notes</b>: generated using <a href="https://d3js.org/">d3</a>; UK map from <a href="http://bl.ocks.org/samuelleach/5130413">Sam Leach</a>; <a href="https://github.com/tomwhite/datavision-code/tree/master/07-closest-city">code</a></p>
+
+    <p><b>See also</b>: <a href="https://observablehq.com/@mbostock/u-s-airports-voronoi">U.S. Airports Voronoi</a></p>
+
+    <script>
+
+      var width = 960,
+          height = 1160;
+      
+      var projection = d3.geoAlbers()
+          .center([0, 55.4])
+          .rotate([4.4, 0])
+          .parallels([50, 60])
+          .scale(1200 * 5)
+          .translate([width / 2, height / 2]);
+      
+      var path = d3.geoPath()
+          .projection(projection)
+          .pointRadius(2);
+      
+      var svg = d3.select("#dataviz").append("svg")
+          .attr("width", width / 2)
+          .attr("height", height / 2)
+          .attr("viewBox", [0, 0, width, height]);
+      
+      d3.json("assets/data/uk.json", function(error, uk) {
+        var subunits = topojson.object(uk, uk.objects.subunits),
+            places = topojson.object(uk, uk.objects.places);
+      
+        svg.selectAll(".subunit")
+            .data(subunits.geometries)
+          .enter().append("path")
+            .attr("class", function(d) { return "subunit " + d.id; })
+            .attr("d", path);
+      
+        svg.append("path")
+            .datum(topojson.mesh(uk, uk.objects.subunits, function(a, b) { return a !== b && a.id !== "IRL"; }))
+            .attr("d", path)
+            .attr("class", "subunit-boundary");
+      
+        svg.append("path")
+            .datum(topojson.mesh(uk, uk.objects.subunits, function(a, b) { return a === b && a.id === "IRL"; }))
+            .attr("d", path)
+            .attr("class", "subunit-boundary IRL");
+      
+        d3.json("assets/data/cities.geojson", function(error, cities) {
+          svg.append("path")
+            .datum(cities)
+            .attr("d", path)
+            .attr("class", "place");
+      
+          const voronoi = d3.Delaunay
+              .from(cities.geometries, d => projection(d.coordinates)[0], d => projection(d.coordinates)[1])
+              .voronoi([0, 0, width, height]);
+      
+          const mesh = svg.append("path")
+            .attr("fill", "none")
+            .attr("stroke", "red")
+            .attr("stroke-width", 1)
+            .attr("d", voronoi.render());
+      
+          const polygons = svg.selectAll("any")
+            .data(cities.geometries)
+            .enter()
+            .append("path")
+            .attr("fill", "#e8e8e8")
+            .attr("fill-opacity", 0.4)
+            .attr("d", function (d, i) { return voronoi.renderCell(i); })
+            .on("mouseover", function(d, i) {
+              var currentState = this;
+              d3.select(this)
+              .style("fill", "orange")
+              .style("fill-opacity", 0.1);
+            })
+            .on("mouseout", function(d, i) {
+              var currentState = this;
+              d3.select(this)
+              .style("fill", "#e8e8e8")
+              .style("fill-opacity", 0.4);
+            })
+            .append("title")
+            .text(function(d) { return d.properties.name; });
+        });
+      });
+      
+      </script>
+  </body>
+</html>
