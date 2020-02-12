@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "7. Closest city"
+title:  "7. Closest city, UK and Ireland"
 tags: d3
 ---
 <html>
   <head>
-    <title>Closest city | Datavision 2020</title>
+    <title>Closest city, UK and Ireland | Datavision 2020</title>
 
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://d3js.org/topojson.v0.min.js"></script>
@@ -65,11 +65,16 @@ tags: d3
       and <a href="https://en.wikipedia.org/wiki/City_status_in_Ireland">Ireland</a>.
       There are 69 cities in the UK and 5 in Ireland.
     </p>
+
+    <p>
+      The map show rough spheres of influence of each city, or where the nearest city is for any location
+      in the British Isles (as the crow flies - not taking roads into account, of course).
+    </p>
     
     <div id="dataviz"></div>
 
     <p>
-      Hover on a region to see the name of the closest city.
+      Hover on a point to see the name of the closest city.
     </p>
 
     <p><b>Visualization type</b>: Voronoi diagram</p>
