@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "6. A decade of GitHub"
+title:  "8. A decade of GitHub"
 tags: [Python, matplotlib]
 ---
 
 I have been using [GitHub](https://github.com/) since mid 2009 - over a decade. (For non-programmers: GitHub is a website for hosting code, and for collaborating with other people on open-source projects.)
 
-![A decade of GitHub]({{ site.url }}{{ site.baseurl }}/assets/img/06-a-decade-of-github.png)
+![A decade of GitHub]({{ site.url }}{{ site.baseurl }}/assets/img/08-a-decade-of-github.png)
 
-[View larger image]({{ site.url }}{{ site.baseurl }}/assets/img/06-a-decade-of-github.png)
+[View larger image]({{ site.url }}{{ site.baseurl }}/assets/img/08-a-decade-of-github.png)
 
 The visualization shows the cumulative number of commits (changes) made by me on all projects over the course of each year. For the first few years, 2009 to 2012, my usage was fairly modest, then in 2013 I started working on a new project (CDK, later called Kite) that used GitHub as its primary code repository. (Until then I had been working on Apache projects, which were not hosted on GitHub, so they don't show up in this chart.) Development was rapid and it shows in the chart; I finally moved on from the project in 2015. Since then, my contributions have picked up again, with each year from 2017 onwards having more commits than the last. 
 
@@ -22,6 +22,6 @@ The GitHub page for a user has a heatmap for every day that offers something nea
 
 **Data source**: [GitHub Contributions API project](https://github.com/sallar/github-contributions-api), JSON, 275 KB
 
-**Technical notes**: generated using [matplotlib](https://matplotlib.org/), and [adjustText](https://adjusttext.readthedocs.io/en/latest/) to ensure the year labels didn't overlap; [code](https://github.com/tomwhite/datavision-code/tree/master/06-a-decade-of-github)
+**Technical notes**: generated using [matplotlib](https://matplotlib.org/), and [adjustText](https://adjusttext.readthedocs.io/en/latest/) to ensure the year labels didn't overlap; [code](https://github.com/tomwhite/datavision-code/tree/master/08-a-decade-of-github)
 
 **See also**: [My GitHub heatmap](https://github.com/tomwhite)
