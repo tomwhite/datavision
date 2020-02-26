@@ -4,7 +4,7 @@ title:  "9. iNaturalist observations"
 tags: [Python, Datashader, Leaflet]
 ---
 
-[iNaturalist](https://www.inaturalist.org/) is a citizen science project where users share their observations of animals and plants from across the world. At the time of writing there were over 30 million observations on their website.
+[iNaturalist](https://www.inaturalist.org/) is a citizen science project where users share their observations of animals and plants from across the world. At the time of writing there were over 30 million observations on their website, of which almost 13 million were research grade and published under a Creative Commons license.
 
 Naïvely plotting such a large number of data points on a map is generally disappointing due to _overplotting_, since the majority of points overlap, except at very high zoom levels. This is why the [iNaturalist observations](https://www.inaturalist.org/observations) map shows observations as a heatmap, where darker squares indicate higher numbers of observations. Only when you zoom in far enough do you see individual observations, which you can click on to find out more information about them.
 
