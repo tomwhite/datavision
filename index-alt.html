@@ -1,0 +1,218 @@
+---
+layout: page
+title: "Visualizations"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <style>
+      .card-img-top {
+        object-fit: cover;
+        object-position: left;
+        height: 8vw;
+      }
+
+      .embed-responsive {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      /* Three columns side by side */
+      .column {
+        float: left;
+        width: 30%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card {
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+      }
+
+      .card-body {
+        padding: 16px 16px;
+        height: 4vw;
+      }
+
+      /* Clear floats */
+      .card-body::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    </style>
+
+    <title>Tom White's Projects</title>
+  </head>
+  <body>
+    <div class="container" id="projects"></div>
+
+    <script type="text/javascript">
+      var projects = [
+        {
+          name: "18. Ageing Wales",
+          description: "...",
+          img_url: "assets/img/18-ageing-wales.svg",
+          html_url: "18-ageing-wales.html",
+        },
+        {
+          name: "17. Unknown Levels",
+          description: "...",
+          img_url: "assets/img/17-unknown-levels.svg",
+          html_url: "17-unknown-levels.html",
+        },
+        {
+          name: "16. Asteroids",
+          description: "...",
+          img_url: "assets/img/16-asteroids.svg",
+          html_url: "16-asteroids.html",
+        },
+        {
+          name: "15. Body temperature",
+          description: "...",
+          img_url: "assets/img/15-body-temperature.png",
+          html_url: "15-body-temperature.html",
+        },
+        {
+          name: "14. Lots of Lotties: 5K runs in 2019",
+          description: "...",
+          img_url: "assets/img/14-lots-of-lotties.svg",
+          html_url: "14-lots-of-lotties.html",
+        },
+        {
+          name: "13. COVID-19 UK daily tests",
+          description: "...",
+          img_url: "assets/img/13-covid-19-uk-daily-tests.svg",
+          html_url: "13-covid-19-uk-daily-tests.html",
+        },
+        {
+          name: "12. Programming language popularity",
+          description: "...",
+          img_url: "assets/img/12-programming-language-popularity.png",
+          html_url: "12-programming-language-popularity.html",
+        },
+        {
+          name: "11. Hamilton songs",
+          description: "...",
+          img_url: "assets/img/11-hamilton-songs.svg",
+          html_url: "11-hamilton-songs.html",
+        },
+        {
+          name: "10. Crickhowell flooding",
+          description: "...",
+          img_url: "assets/img/10-crickhowell-flooding.svg",
+          html_url: "10-crickhowell-flooding.html",
+        },
+        {
+          name: "9. iNaturalist observations",
+          description: "...",
+          img_url: "assets/img/09-inaturalist-observations.png",
+          html_url: "09-inaturalist-observations.html",
+        },
+        {
+          name: "8. A decade of GitHub",
+          description: "...",
+          img_url: "assets/img/08-a-decade-of-github.png",
+          html_url: "08-a-decade-of-github.html",
+        },
+        {
+          name: "7. Closest city, UK and Ireland",
+          description: "...",
+          img_url: "assets/img/07-closest-city.svg",
+          html_url: "07-closest-city.html",
+        },
+        {
+          name: "6. A&E waiting times in Wales",
+          description: "...",
+          img_url: "assets/img/06-a-and-e-waiting-times-in-wales.png",
+          html_url: "06-a-and-e-waiting-times-in-wales.html",
+        },
+        {
+          name: "5. Genome size",
+          description: "...",
+          img_url: "assets/img/05-genome-size.png",
+          html_url: "05-genome-size.html",
+        },
+        {
+          name: "4. Books read by Emilia White in 2019",
+          description: "...",
+          img_url: "assets/img/04-emilia-books-2019.svg",
+          html_url: "04-emilia-books-2019.html",
+        },
+        {
+          name: "3. Wales Population Cartogram",
+          description: "...",
+          img_url: "assets/img/03-wales-population-cartogram.png",
+          html_url: "03-wales-population-cartogram.html",
+        },
+        {
+          name: "2. One million trees in Brecon Beacons National Park",
+          description: "...",
+          img_url: "assets/img/02-1m-trees.png",
+          html_url: "02-1m-trees.html",
+        },
+        {
+          name: "1. Women in parliament",
+          description: "...",
+          img_url: "assets/img/01-women-in-parliament.png",
+          html_url: "01-women-in-parliament.html",
+        },
+      ];
+      var html = "";
+      for (var i = 0; i < projects.length; i++) {
+        if (i % 3 == 0) {
+          html += '<div class="row">\n';
+        }
+        var project = projects[i];
+        html += [
+          '<div class="column">',
+          '  <div class="card">',
+          "    <div>",
+          '      <a href="' +
+            project.html_url +
+            '"><img class="card-img-top embed-responsive" src="' +
+            project.img_url +
+            '" alt="' +
+            project.name +
+            ' logo"></a>',
+          "    </div>",
+          '    <div class="card-body">',
+          '      <a href="' +
+            project.html_url +
+            '"><p class="card-title">' +
+            project.name +
+            "</p></a>",
+          "    </div>",
+          "  </div>",
+          "</div>",
+          "",
+        ].join("\n");
+
+        if (i % 3 == 2) {
+          html += "</div>\n";
+        }
+      }
+
+      if (projects.length % 3 != 0) {
+        html += "</div>\n";
+      }
+
+      document.getElementById("projects").innerHTML = html;
+    </script>
+  </body>
+</html>
