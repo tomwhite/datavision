@@ -4,7 +4,7 @@ title: "19. Fertility rate"
 tags: d3
 ---
 
-Fetility rate - which is defined as the number of children born per woman in a population - is in decline across the world, and [has been for over half a century](https://ourworldindata.org/fertility-rate#the-global-decline-of-the-fertility-rate-since-1950).
+Fertility rate - which is defined as the number of children born per woman in a population - is in decline across the world, and [has been for over half a century](https://ourworldindata.org/fertility-rate#the-global-decline-of-the-fertility-rate-since-1950).
 
 I wanted to show in a single chart what the latest data showed for each country in the world, while taking each country's population into account.
 
