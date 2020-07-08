@@ -14,9 +14,9 @@ In May I posted a [chart]({{ site.url }}{{ site.baseurl }}/20-where-are-the-coro
 
 The trouble was that the government was not publishing Pillar 2 case numbers. It only started doing so on 2 July, after much [press consternation](https://twitter.com/jburnmurdoch/status/1277961740697796620), and three days after the Leicester lockdown was imposed.
 
-As the animated chart above shows, to a member of the public looking at the case numbers, *there was no sign of anything amiss*. In fact, the Pillar 1 numbers by themselves were seriously undercounting the number of cases, and actively misleading the public. This was even the case on official government sites, such as the PHE dashboard.
+As the animated chart above shows, to a member of the public looking at the case numbers there was no sign of anything amiss, and *in fact it looked like the situation was improving*. In reality, the hidden Pillar 2 numbers were increasing dramatically, so by only reporting the Pillar 1 numbers the government was actively misleading the public. This was the case even on official government sites, such as the PHE dashboard.
 
-Finally the government is now publishing the Pillar 1 and 2 case numbers every day, so we can see for ourselves where local outbreaks are occurring.
+Thankfully, the government is now publishing the Pillar 1 and 2 case numbers every day, so we can see for ourselves where local outbreaks are occurring.
 
 **Visualization type**: animated bar chart
 
