@@ -4,7 +4,7 @@ title:  "36. Disk drive capacities"
 tags: [R, ggplot2]
 ---
 
-Backblaze is a company that offers cloud backups, and every quarter it publishes [data](https://www.backblaze.com/b2/hard-drive-test-data.html) on the disk drives it uses in its data centre. The data is very detailed: every day a snpashot of each active disk drive is taken to record statistics about its operation.
+Backblaze is a company that offers cloud backups, and every quarter it publishes [data](https://www.backblaze.com/b2/hard-drive-test-data.html) on the disk drives it uses in its data centre. The data is very detailed: every day a snapshot of each active disk drive is taken to record statistics about its operation.
 
 I processed the data to find the capacity of every drive that was installed over the lieftime of the dataset (2013-present):
 
