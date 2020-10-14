@@ -16,6 +16,8 @@ The number shown (n) is the number of chromosomes in the [_gametophyte_](https:/
 
 (Complicating matters further, and not shown in the diagram, is the fact that some plants are [polyploid](https://en.wikipedia.org/wiki/Polyploidy), meaning there are more than two paired copies of each chromosome. Kiwifruit, for example, are hexaploid, with six sets of chromosomes!)
 
+_Update: a week after writing this post, the following paper was published: [Animal chromosome counts reveal similar range of chromosome numbers but with less polyploidy in animals compared to flowering plants](https://www.biorxiv.org/content/10.1101/2020.10.10.334722v1) by Román-Palacios et al. Figure 1 from the paper is interesting, since it shows that animals and angiosperms have similar chromosome number distributions, but ferns tend to have higher numbers of chromosomes._
+
 **Visualization type**: barchart
 
 **Data source**: [Chromosome Counts Database](http://ccdb.tau.ac.il/), CSV, 15 MB.
