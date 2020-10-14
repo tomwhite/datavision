@@ -18,7 +18,7 @@ The number shown (n) is the number of chromosomes in the [_gametophyte_](https:/
 
 _Update: a week after writing this post, the following paper was published: [Animal chromosome counts reveal similar range of chromosome numbers but with less polyploidy in animals compared to flowering plants](https://www.biorxiv.org/content/10.1101/2020.10.10.334722v1) by Román-Palacios et al. Figure 1 from the paper is interesting, since it shows that animals and angiosperms have similar chromosome number distributions, but ferns tend to have higher numbers of chromosomes._
 
-**Visualization type**: barchart
+**Visualization type**: bar chart
 
 **Data source**: [Chromosome Counts Database](http://ccdb.tau.ac.il/), CSV, 15 MB.
 
