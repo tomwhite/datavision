@@ -8,7 +8,7 @@ We are in the last few weeks of our house build. It's a low-energy house, and wh
 
 This week's visualization shows the location of passive houses in the UK:
 
-<a href="{{ site.url }}{{ site.baseurl }}/43-passive-houses-in-the-uk-interactive.html"><img src="{{ site.url }}{{ site.baseurl }}/assets/img/43-passive-houses-in-the-uk.png" alt="A Level grades"/></a>
+<a href="{{ site.url }}{{ site.baseurl }}/43-passive-houses-in-the-uk-interactive.html"><img src="{{ site.url }}{{ site.baseurl }}/assets/img/43-passive-houses-in-the-uk.png" alt="Passive houses in the UK"/></a>
 
 (Click on the image to try the [interactive version]({{ site.url }}{{ site.baseurl }}/43-passive-houses-in-the-uk-interactive.html), and find details of the buildings.)
 
