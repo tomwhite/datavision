@@ -16,7 +16,7 @@ I was surprised that Wales has had and continues to have such a low rate, given 
 
 The dashed line shows the target rate recommended by the Committee on Climate Change to meet the net-zero target. This rate translates to planting trees on approximately 1/8 of a percent of the area of the UK _every year_ by 2024 until 2050. This is more than double the rate of planting in the year up to 31 March 2020, and is not at a level seen since 1989.
 
-What are the rate in terms of land area and numbers of trees? The next chart shows the same data, but the y-axis measures millions of trees (on the left), and thousands of hectares (on the right). The 2024 target is 30 thousand hectares.
+What are the rates in terms of land area and numbers of trees? The next chart shows the same data, but the y-axis measures millions of trees (on the left), and thousands of hectares (on the right). The 2024 target is 30 thousand hectares.
 
 ![UK tree planting rates 1971-2020, by area]({{ site.url }}{{ site.baseurl }}/assets/img/44-uk-tree-planting-area.png)
 
