@@ -6,7 +6,7 @@ tags: [R, ggplot2]
 
 A year ago I came up with the idea of creating one data visualization per week in 2020. I wanted to learn to use some new tools, and to put into practice some of the techniques I'd read about in Claus Wilke's book, [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/).
 
-52 weeks of visualizations later, what did I learn? Here are some summary charts:
+[52 weeks of visualizations]({{ site.url }}{{ site.baseurl }}/) later, what did I learn? Here are some summary charts:
 
 ![Metadatavision]({{ site.url }}{{ site.baseurl }}/assets/img/53-metadatavision.png)
 
@@ -14,7 +14,7 @@ As you can see from the bar chart of visualization libraries, I grew to love d3 
 
 The second bar chart shows the distribution of the type of visualization, divided into families (irrespective of the tool used to produce it). The families are from Andy Kirk's handy [Chartmaker Directory](https://chartmaker.visualisingdata.com/) (the same ones appear in his [book](https://www.visualisingdata.com/book/) too), and are intended to capture the primary role of each chart.
 
-Most of the visualizations have a temporal dimension (how does _x_ change over time?). I became aware of my bias here, and consciously tried to come up with visualizations that did not have a time dimension (and in fact most of my favourites were not time plots, see below). I did produce a large variety of chart types though (not shown on the chart, but the visualization type is listed on the page for each visualization) - something else that I consciously tried to do.
+Most of the visualizations have a temporal dimension (how does _x_ change over time?). I became aware of my bias here, and consciously tried to come up with visualizations that did not have a time dimension (and in fact most of my favourites were not time plots, see below). I did produce a large variety of chart types though (not shown on the chart, but the visualization type is listed on the page for each [visualization]({{ site.url }}{{ site.baseurl }}/)) - something else that I consciously tried to do.
 
 The third chart shows the distribution of the size of each dataset. The dataset sizes ranged over 9 orders of magnitude - from a few hundred bytes to tens of gigabytes. I didn't pay much attention to this - my prime interest was finding interesting ways of presenting interesting data. There was no correlation in my mind between dataset size and how interesting it was - I was certainly not trying to visualize large datasets (I was quite happy to do so, but never needed more processing power than a single machine to do so).
 
